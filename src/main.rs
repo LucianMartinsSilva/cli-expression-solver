@@ -21,7 +21,7 @@ fn main() {
     }
 }
 
-fn calculate(expression: &str) -> Result<f64, &'static str> {
+fn calculate(expression: &str) -> Result<f64, &str> {
     let mut current_op: Option<char> = None;
     let mut parts = expression.split_whitespace();
     let mut result = 0.0;
